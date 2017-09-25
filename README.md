@@ -80,7 +80,7 @@ Spacing indicates the element:
 The schema file will be processed by script to convert it to a format readable by LabKey software, called a metadata file.
 In order for this to work, the file must follow the format shown in this document.
 
-The schema cannot contain double quote characters ["]. Any found in the file will be automatically converted to single quotes ['].
+The schema cannot contain double quote characters ["]. Any found in the file will be converted to single quotes ['].
 
 However, the script has functionality to make things easier:
 1. The script will check for schema validity
