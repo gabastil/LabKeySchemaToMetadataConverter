@@ -13,7 +13,8 @@ Each field must specify:
 
 The schema cannot contain double quote characters ("). Any found in the file will be automatically converted to single quotes (').
 
-**Template**
+
+**Template:**
 
 ```
 Section Name 1
@@ -43,7 +44,7 @@ Section Name 2
 ...
 ```
 
-**Example**
+**Example:**
 
 ```
 Loco-Regional Recurrence
@@ -74,9 +75,9 @@ Distant Recurrence
 
 ## Notes for Schema Creators
 Spacing indicates the element:
-	0 tabs = Section
-	1 tab =  Field
-	2 tabs = Datatype or Dropdown List Option
+* 0 tabs = Section
+* 1 tab =  Field
+* 2 tabs = Datatype or Dropdown List Option
 
 The schema file will be processed by script to convert it to a format readable by LabKey software, called a metadata file.
 In order for this to work, the file must follow the format shown in this document.
