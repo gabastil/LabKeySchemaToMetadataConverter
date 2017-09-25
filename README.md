@@ -14,6 +14,7 @@ Each field must specify:
 The schema cannot contain double quote characters ("). Any found in the file will be automatically converted to single quotes (').
 
 **Template**
+
 Section Name 1
 	Field Name 1
 		*Field data type*
@@ -41,6 +42,7 @@ Section Name 2
 ...
 
 **Example**
+
 Loco-Regional Recurrence
 	Local Recurrence - Breast
 		*CC*
@@ -66,7 +68,7 @@ Distant Recurrence
 		Brain
 		Distant Lymph Nodes
 
-**Notes for Schema Creators**
+## Notes for Schema Creators
 Spacing indicates the element:
 	0 tabs = Section
 	1 tab =  Field
