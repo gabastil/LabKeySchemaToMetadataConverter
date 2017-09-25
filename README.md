@@ -15,7 +15,7 @@ The schema cannot contain double quote characters ("). Any found in the file wil
 
 **Template**
 
-Section Name 1
+```Section Name 1
 	Field Name 1
 		*Field data type*
 		Dropdown Option 1
@@ -39,11 +39,11 @@ Section Name 2
 		Dropdown Option 2
 		...
 	...
-...
+...```
 
 **Example**
 
-Loco-Regional Recurrence
+```Loco-Regional Recurrence
 	Local Recurrence - Breast
 		*CC*
 		Positive
@@ -66,7 +66,7 @@ Distant Recurrence
 		Lung (incl. Malignant Pleural Effusion)
 		Bone
 		Brain
-		Distant Lymph Nodes
+		Distant Lymph Nodes```
 
 ## Notes for Schema Creators
 Spacing indicates the element:
