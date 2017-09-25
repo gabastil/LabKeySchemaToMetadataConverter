@@ -82,7 +82,7 @@ In order for this to work, the file must follow the format shown in this documen
 
 The schema cannot contain double quote characters ["]. Any found in the file will be converted to single quotes ['].
 
-However, the script has functionality to make things easier:
+The script has functionality to make things easier:
 1. The script will check for schema validity
 2. Capitalization for anything and asterisks for datatypes are not necessary
 3. An additional script is available to automatically add asterisks to datatypes in an otherwise completed schema, if desired
