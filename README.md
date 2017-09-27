@@ -117,14 +117,14 @@ After conversion, the metadata file needs to have a quick processing step before
 This entails having carriage return characters stripped out of it.
 
 One way to accomplish this is to
-	1) Open the json file in Notepad++
-	2) Press CTRL+H to bring up the Find/Replace screen
-	3) In the "Search Mode" section of the radial buttons, make sure "Extended" is activated
-	4) In "Find what", enter "\r"
-	5) In "Replace with", make sure the field is empty
-	6) Hit "Replace All"
+1. Open the json file in Notepad++
+2. Press CTRL+H to bring up the Find/Replace screen
+3. In the "Search Mode" section of the radial buttons, make sure "Extended" is activated
+4. In "Find what", enter "\r"
+5. In "Replace with", make sure the field is empty
+6. Hit "Replace All"
 
 One way to check for carriage return characters in the file
-	1) Open the json file in Notepad++
-	2) Go to View > Show Symbol > Show All Characters
-	3) Carriage returns will appear as a box with the letters "CR"
+1. Open the json file in Notepad++
+2. Go to View > Show Symbol > Show All Characters
+3. Carriage returns will appear as a box with the letters "CR"
