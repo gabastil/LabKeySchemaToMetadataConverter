@@ -1,6 +1,30 @@
 # SchemaToMetadataConverter
 Converts text file annotation schemas into metadata JSON files useable by LabKey Software
 
+## Instructions for Converting Schema files to Metadata files
+This manual assumes the user is using Windows.
+
+**Input**
+
+Navigate to the Schema_to_Metadata_Converter folder in the command prompt.
+Use the following command:
+
+```convert_schema_to_json.cmd [FILE]```
+
+where FILE is the schema file name. For example, if the schema file is named
+biomarker_schema_4.txt in the folder C:\Documents\Schemas, then the command would be:
+
+```convert_schema_to_json.cmd C:\Documents\Schemas\biomarker_SCHEMA_v4.txt```
+
+
+**Output**
+
+The script will produce a json file of the same name as the schema file in the same location.
+
+So, in the example above, the script will create "biomarker_METADATA_v4.json" and
+put it in C:\Documents\Schemas
+
+
 ## Annotation Schema Format
 LabKey annotation schemas consist of fields which are divided into sections.
 
@@ -72,17 +96,14 @@ Distant Recurrence
 ```
 
 ## Notes for Schema Creators
-Spacing indicates the element:
+Spacing indicates whether something is a section, field, or field property:
 * 0 tabs = Section
 * 1 tab =  Field
 * 2 tabs = Datatype or Dropdown List Option
 
-The schema file will be processed by script to convert it to a format readable by LabKey software, called a metadata file.
-In order for this to work, the file must follow the format shown in this document.
-
 The schema cannot contain double quote characters ["]. Any found in the file will be converted to single quotes ['].
 
-The script has functionality to make things easier:
+The conversion script has functionality to make things easier:
 1. The script will check for schema validity
 2. Capitalization for anything and asterisks for datatypes are not necessary
 3. An additional script is available to automatically add asterisks to datatypes in an otherwise completed schema, if desired
