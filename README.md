@@ -7,9 +7,9 @@ Here is a [command prompt tutorial](http://www.cs.princeton.edu/courses/archive/
 
 ### Setup
 
-1. Click the green "Clone or download" button on the GitHub repository's main page and click "Download ZIP". 
+1. Click the green "Clone or download" button on the GitHub repository's main page and click "Download ZIP"
 2. Find downloaded folder, right click it to bring up a menu, and proceed with "Extract All"
-3. Open the LabKeySchemaToMetadataConverter folder
+3. Keep track of the location of the extracted LabKeySchemaToMetadataConverter folder
 
 ### Input
 
