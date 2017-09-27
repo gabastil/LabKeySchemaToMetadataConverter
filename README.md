@@ -3,14 +3,14 @@ Converts text file annotation schemas into metadata JSON files useable by LabKey
 
 ## Instructions for Converting Files
 This manual assumes the user is using Windows and is familiar with the command prompt.
-[Command prompt tutorial](http://www.cs.princeton.edu/courses/archive/spr05/cos126/cmd-prompt.html "Princeton Commant Prompt Tutorial")
+Here is a [command prompt tutorial](http://www.cs.princeton.edu/courses/archive/spr05/cos126/cmd-prompt.html "Princeton Commant Prompt Tutorial") for reference.
 
 **Input**
 
 Navigate to the Schema_to_Metadata_Converter folder in the command prompt.
 Use the following command:
 
-```convert_schema_to_json.cmd [FILE]```
+```convert_schema_to_json.cmd SCHEMA_FILE```
 
 where FILE is the schema file name. For example, if the schema file is named
 biomarker_schema_4.txt in the folder C:\Documents\Schemas, then the command would be:
