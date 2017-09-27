@@ -2,7 +2,8 @@
 Converts text file annotation schemas into metadata JSON files useable by LabKey Software
 
 ## Instructions for Converting Files
-This manual assumes the user is using Windows.
+This manual assumes the user is using Windows and is familiar with the command prompt.
+[Command prompt tutorial](http://www.cs.princeton.edu/courses/archive/spr05/cos126/cmd-prompt.html "Princeton Commant Prompt Tutorial")
 
 **Input**
 
@@ -102,8 +103,27 @@ Spacing indicates whether something is a section, field, or field property:
 * 2 tabs = Datatype or Dropdown List Option
 
 The schema cannot contain double quote characters ["]. Any found in the file will be converted to single quotes ['].
+The schema cannot contain any non-ASCII characters. Any found will be replaced or removed.
 
 The conversion script has functionality to make schema development easier:
 1. The script will check for schema validity
 2. Capitalization for anything and asterisks for datatypes are not necessary
 3. An additional script is available to automatically add asterisks to datatypes in an otherwise completed schema, if desired
+
+## Notes for Metadata Creators
+
+After conversion, the metadata file needs to have a quick processing step before being loaded into LabKey.
+This entails having carriage return characters stripped out of it.
+
+One way to accomplish this is to
+	1) Open the json file in Notepad++
+	2) Press CTRL+H to bring up the Find/Replace screen
+	3) In the "Search Mode" section of the radial buttons, make sure "Extended" is activated
+	4) In "Find what", enter "\r"
+	5) In "Replace with", make sure the field is empty
+	6) Hit "Replace All"
+
+One way to check for carriage return characters in the file
+	1) Open the json file in Notepad++
+	2) Go to View > Show Symbol > Show All Characters
+	3) Carriage returns will appear as a box with the letters "CR"
