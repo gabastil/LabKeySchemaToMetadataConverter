@@ -109,7 +109,7 @@ The schema cannot contain:
 The conversion script has functionality to make schema development easier:
 1. The script will check for schema validity
 2. Capitalization for anything and asterisks for datatypes are not necessary
-3. An additional script is available to automatically add asterisks to datatypes in an otherwise completed schema, if desired
+3. An additional script is available to automatically [add asterisks to datatypes](LabKeySchemaToMetadataConverter/Converter_Files/format_field_datatypes.py) in an otherwise completed schema, if desired.
 
 ## Notes for Metadata Managers
 
