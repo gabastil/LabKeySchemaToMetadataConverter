@@ -110,7 +110,7 @@ The conversion script has functionality to make schema development easier:
 2. Capitalization for anything and asterisks for datatypes are not necessary
 3. An additional script is available to automatically add asterisks to datatypes in an otherwise completed schema, if desired
 
-## Notes for Metadata Creators
+## Notes for Metadata Managers
 
 After conversion, the metadata file needs to have a quick processing step before being loaded into LabKey.
 This entails having carriage return characters stripped out of it.
