@@ -13,7 +13,7 @@ Here is a [command prompt tutorial](http://www.cs.princeton.edu/courses/archive/
 
 ### Input
 
-Navigate to the Schema_to_Metadata_Converter folder in the command prompt.
+Navigate to the LabKeySchemaToMetadataConverter folder in the command prompt.
 Use the following command:
 
 ```convert_schema_to_json.cmd SCHEMA_FILE```
