@@ -2,8 +2,8 @@
 Converts text file annotation schemas into metadata JSON files useable by LabKey Software
 
 ## Instructions for Converting Files
-This manual assumes the user is using Windows and is familiar with the command prompt.
-Here is a [command prompt tutorial](http://www.cs.princeton.edu/courses/archive/spr05/cos126/cmd-prompt.html "Princeton Commant Prompt Tutorial") for reference.
+This manual assumes the user is using Windows and is familiar with navigating in a command prompt.
+Here is a [command prompt tutorial](https://www.computerhope.com/issues/chusedos.htm "Computer Hope Command Line Guide") for reference.
 
 ### Setup
 
