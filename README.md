@@ -19,7 +19,7 @@ biomarker_schema_4.txt in the folder C:\Documents\Schemas, then the command woul
 
 **Output**
 
-The script will produce a json file of the same name as the schema file, except for swapping "schema" for "METADATA", in the same location.
+The script will produce a json file of the same name as the schema file, except for swapping "schema" for "METADATA", and put it in the same location.
 
 So, in the example above, the script will create "biomarker_METADATA_v4.json" and
 put it in C:\Documents\Schemas
