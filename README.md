@@ -102,8 +102,9 @@ Spacing indicates whether something is a section, field, or field property:
 * 1 tab =  Field
 * 2 tabs = Datatype or Dropdown List Option
 
-The schema cannot contain double quote characters ["]. Any found in the file will be converted to single quotes ['].
-The schema cannot contain any non-ASCII characters. Any found will be replaced or removed.
+The schema cannot contain:
+* double quote characters ["]. Any found in the file will be converted to single quotes ['].
+* non-ASCII characters. Any found will be replaced or removed.
 
 The conversion script has functionality to make schema development easier:
 1. The script will check for schema validity
