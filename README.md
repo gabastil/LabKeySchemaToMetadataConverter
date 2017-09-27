@@ -1,7 +1,7 @@
 # SchemaToMetadataConverter
 Converts text file annotation schemas into metadata JSON files useable by LabKey Software
 
-## Instructions for Converting Schema files to Metadata files
+## Instructions for Converting Files
 This manual assumes the user is using Windows.
 
 **Input**
