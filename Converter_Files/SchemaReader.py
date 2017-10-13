@@ -83,9 +83,16 @@ def read_schema_line(line, line_index):
     # Get value
     value = line[text_index:]
     value = value.rstrip("\r\n")
-    value = re.sub(r"\"", "'", value)
+    value = replace_json_illegal_characters(value)
 
     return value, level, schema_is_valid
+
+
+def replace_json_illegal_characters(value):
+    value = re.sub(r"\"", "'", value)
+    value = re.sub(r"\\", "/", value)
+    value = re.sub(r"\t", "    ", value)
+    return value
 
 
 def check_spacing(line, line_index):

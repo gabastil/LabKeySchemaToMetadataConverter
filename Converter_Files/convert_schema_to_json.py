@@ -44,7 +44,7 @@ def get_header_or_footer(json_file_content, file, schema_is_valid):
         json_file_content.extend(lines)
     except IOError:
         schema_is_valid = False
-        print("Error: can't find supporting file " + file +" from current directory " + os.getcwd())
+        print("Error: can't find supporting file " + file + " from current directory " + os.getcwd())
     return json_file_content, schema_is_valid
 
 
