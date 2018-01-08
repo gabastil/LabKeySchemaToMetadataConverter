@@ -3,6 +3,7 @@ import argparse
 SECTION_CHAR = "â€¢"
 FIELD_CHAR = "o"
 PROPERTY_CHAR = "ï‚§"
+PROPERTY_CHAR_2 = "?"
 
 
 def main(in_file, out_file):
@@ -14,14 +15,18 @@ def main(in_file, out_file):
         if line:
             if SECTION_CHAR in line:
                 line = line.lstrip(SECTION_CHAR)
-                line = line.lstrip("\t")
+                line = line.lstrip()
             elif line[0] == FIELD_CHAR:
                 line = line.lstrip(FIELD_CHAR)
-                line = line.lstrip("\t")
+                line = line.lstrip()
                 line = "\t" + line
             elif PROPERTY_CHAR in line:
                 line = line.lstrip(PROPERTY_CHAR)
-                line = line.lstrip("\t")
+                line = line.lstrip()
+                line = "\t\t" + line
+            elif line[0] == PROPERTY_CHAR_2:
+                line = line.lstrip(PROPERTY_CHAR_2)
+                line = line.lstrip()
                 line = "\t\t" + line
 
         out_lines.append(line)
