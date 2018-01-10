@@ -206,6 +206,7 @@ def process_schema_field_datatype(line_value, line_level, field, schema_is_valid
     else:
         line_datatype = line_value.lower()
         line_datatype = re.sub("\*", "", line_datatype)
+        line_datatype = line_datatype.strip()
 
         if line_datatype not in DATATYPES:
             schema_is_valid = False

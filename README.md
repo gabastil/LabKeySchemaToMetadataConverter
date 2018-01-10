@@ -13,12 +13,37 @@ Here is a [command prompt tutorial](https://www.computerhope.com/issues/chusedos
 
 ### Input
 
+The script requires a text file (.txt) of the schema.
+
+Schemas are created as Microsoft Word files (.docx), with a format described below. To create the text file of the schema:
+1. Create a new text (.txt) file
+2. Open the Word schema file
+3. Copy and paste the contents of the Word file into the empty text file. The bullets will appear as strange symbols and the spacing will appear wrong, but this is expected behavior.
+4. Save the file, ensuring that the encoding is "UTF-8"
+
+###### Saving the File
+
+In Notepad, click "File"->"Save As". Near the "Save" button there should be options for "Encoding":
+
+![encoding](encoding.PNG)
+
+Select "UTF-8":
+
+![UTF-8](utf_8.PNG)
+
+If run into the following message, click "Cancel" and follow the directions above:
+
+![error message](error_message.PNG)
+
+
+### Run Converter
+
 Navigate to the LabKeySchemaToMetadataConverter folder in the command prompt.
 Use the following command:
 
 ```convert_schema_to_json.cmd SCHEMA_FILE```
 
-where SCHEMA_FILE is the name (or path from the current folder) of the schema file you wish to convert. For example, if the schema file is named biomarker_schema_4.txt in the folder C:\Documents\Schemas, then the command would be:
+where SCHEMA_FILE is the name (or path from the current folder) of the schema text file you wish to convert. For example, if the schema file is named biomarker_schema_4.txt in the folder C:\Documents\Schemas, then the command would be:
 
 ```convert_schema_to_json.cmd C:\Documents\Schemas\biomarker_SCHEMA_v4.txt```
 
@@ -31,8 +56,32 @@ So, in the example above, the script will create "biomarker_METADATA_v4.json" an
 put it in C:\Documents\Schemas
 
 
-## Annotation Schema Format
-LabKey annotation schemas consist of fields which are divided into sections.
+## Annotation Schema Format - Microsoft Word File
+LabKey annotation schemas may be Microsoft Word files (.docx) that consist of fields which are divided into sections.
+
+Each field must specify:
+* Its data type, one of [OC, CC, Date]
+    * Open Class (OC) indicates a value may either be manually entered into the field, or selected from the dropdown list
+	* Closed Class (CC) indicates a value can only be selected from the dropdown list
+	* Date indicates a value to be selected from a calendar
+* Possible values to be listed in its dropdown list (if applicable)
+
+
+**Template:**
+
+![Schema Format](schema_format.PNG)
+
+**Example:**
+
+![Schema Example](schema_example.PNG)
+
+
+## Annotation Schema Format - Text File
+
+Another format option for LabKey annotation schemas are text files (.txt). Using this option, there's no need to convert from a Word document.
+
+*Using this schema, use "convert_text_file_schema_to_json.cmd" instead of "convert_schema_to_json.cmd"*
+
 
 Each field must specify:
 * Its data type, one of [OC, CC, Date]
@@ -101,6 +150,7 @@ Distant Recurrence
 		Distant Lymph Nodes
 ```
 
+
 ## Notes for Schema Creators
 Spacing indicates whether something is a section, field, or field property:
 * 0 tabs = Section
@@ -115,6 +165,7 @@ The conversion script has functionality to make schema development easier:
 1. The script will check for schema validity
 2. Capitalization for anything and asterisks for datatypes are not necessary
 3. An additional script is available to automatically [add asterisks to datatypes](Converter_Files/format_field_datatypes.py) in an otherwise completed schema, if desired.
+
 
 ## Notes for Metadata Managers
 

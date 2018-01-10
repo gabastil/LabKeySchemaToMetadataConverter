@@ -25,7 +25,7 @@ Output
 
 The script will produce a json file of the same name as the schema file in the same location.
 
-So, in the example above, the script will create "biomarker_schema_4.json" and 
+So, in the example above, the script will create "biomarker_metadata_4.json" and
 put it in C:\Documents\Schemas
 
 

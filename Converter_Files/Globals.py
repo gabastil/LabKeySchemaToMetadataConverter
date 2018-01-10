@@ -91,5 +91,6 @@ CLASS = "CLASS"
 DROPDOWN = "DROPDOWN"
 
 ASCII_REPLACEMENT_DICT = {
-    "–": "-"
+    "–": "-",
+    "’": "'"
 }
