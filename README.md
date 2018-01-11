@@ -15,7 +15,7 @@ Here is a [command prompt tutorial](https://www.computerhope.com/issues/chusedos
 
 The script requires a text file (.txt) of the schema.
 
-Schemas are created as Microsoft Word files (.docx) with a format described below. To create the text file of the schema:
+Schemas are created as Microsoft Word files (.docx) with a format described later in this readme. To create the text file of the schema:
 1. Create a new text (.txt) file
 2. Open the Word schema file
 3. Copy and paste the contents of the Word file into the empty text file. The bullets will appear as strange symbols and the spacing will appear wrong, but this is expected.
