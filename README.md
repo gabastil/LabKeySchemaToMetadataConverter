@@ -79,9 +79,9 @@ Each field must specify:
 
 ## Annotation Schema Format - Text File
 
-Another format option for LabKey annotation schemas are text files (.txt). Using this option, there's no need to convert from a Word document.
+Another format option for LabKey annotation schemas are to directly create manually formatted text files (.txt). Using this option, there's no need to convert from a Word document.
 
-*To convert this type of schema to a json metadata file, use "convert_text_file_schema_to_json.cmd" instead of "convert_schema_to_json.cmd" while following the "Run Converter" instructions above*
+*To convert this type of schema to a json metadata file, use "convert_text_file_formatted_schema_to_json.cmd" instead of "convert_schema_to_json.cmd" while following the "Run Converter" instructions above*
 
 
 Each field must specify:
@@ -185,3 +185,12 @@ One way to check for carriage return characters in the file
 1. Open the json file in Notepad++
 2. Go to View > Show Symbol > Show All Characters
 3. Carriage returns will appear as a box with the letters "CR"
+
+
+## Summary of Conversion Steps
+
+1. Obtain MS Word schema
+2. Copy schema contents and paste into a new .txt file
+3. Run the converter script with this .txt file
+4. Remove carriage returns from the generated .json file
+5. Install .json file into LabKey
