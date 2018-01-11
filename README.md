@@ -2,8 +2,8 @@
 Converts text file annotation schemas into metadata JSON files useable by LabKey Software
 
 ## Instructions for Converting Files
-This manual assumes the user is using Windows and is familiar with navigating in a command prompt.
-Here is a [command prompt tutorial](https://www.computerhope.com/issues/chusedos.htm "Computer Hope Command Line Guide") for reference.
+This manual assumes the user is using Windows and is familiar with navigating through directories in a command prompt.
+Here is a [command prompt tutorial](https://www.computerhope.com/issues/chusedos.htm "Computer Hope Command Line Guide") and [another one just about navigation](http://www.pcstats.com/articleview.cfm?articleid=1723&page=3) for reference.
 
 ### Setup
 
@@ -15,25 +15,25 @@ Here is a [command prompt tutorial](https://www.computerhope.com/issues/chusedos
 
 The script requires a text file (.txt) of the schema.
 
-Schemas are created as Microsoft Word files (.docx), with a format described below. To create the text file of the schema:
+Schemas are created as Microsoft Word files (.docx) with a format described below. To create the text file of the schema:
 1. Create a new text (.txt) file
 2. Open the Word schema file
-3. Copy and paste the contents of the Word file into the empty text file. The bullets will appear as strange symbols and the spacing will appear wrong, but this is expected behavior.
+3. Copy and paste the contents of the Word file into the empty text file. The bullets will appear as strange symbols and the spacing will appear wrong, but this is expected.
 4. Save the file, ensuring that the encoding is "UTF-8"
 
 ###### Saving the File
 
 In Notepad, click "File"->"Save As". Near the "Save" button there should be options for "Encoding":
 
-![encoding](encoding.PNG)
+![encoding](images/encoding.PNG)
 
 Select "UTF-8":
 
-![UTF-8](utf_8.PNG)
+![UTF-8](images/utf_8.PNG)
 
 If run into the following message, click "Cancel" and follow the directions above:
 
-![error message](error_message.PNG)
+![error message](images/error_message.PNG)
 
 
 ### Run Converter
@@ -51,9 +51,10 @@ where SCHEMA_FILE is the name (or path from the current folder) of the schema te
 ### Output
 
 The script will produce a json file of the same name as the schema file, except for swapping "schema" for "METADATA", and put it in the same location.
-
-So, in the example above, the script will create "biomarker_METADATA_v4.json" and
+So in the example above, the script will create "biomarker_METADATA_v4.json" and
 put it in C:\Documents\Schemas
+
+The text file with the Microsoft Word schema contents will also be formatted into the text file schema format, described below.
 
 
 ## Annotation Schema Format - Microsoft Word File
@@ -69,18 +70,18 @@ Each field must specify:
 
 **Template:**
 
-![Schema Format](schema_format.PNG)
+![Schema Format](images/schema_format.PNG)
 
 **Example:**
 
-![Schema Example](schema_example.PNG)
+![Schema Example](images/schema_example.PNG)
 
 
 ## Annotation Schema Format - Text File
 
 Another format option for LabKey annotation schemas are text files (.txt). Using this option, there's no need to convert from a Word document.
 
-*Using this schema, use "convert_text_file_schema_to_json.cmd" instead of "convert_schema_to_json.cmd"*
+*To convert this type of schema to a json metadata file, use "convert_text_file_schema_to_json.cmd" instead of "convert_schema_to_json.cmd" while following the "Run Converter" instructions above*
 
 
 Each field must specify:
