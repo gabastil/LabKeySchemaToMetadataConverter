@@ -50,7 +50,7 @@ where SCHEMA_FILE is the name (or path from the current folder) of the schema te
 
 ### Output
 
-The script will produce a json file of the same name as the schema file, except for swapping "schema" for "METADATA", and put it in the same location.
+The script will produce a .json file of the same name as the schema file, except for swapping "SCHEMA" for "METADATA", and put it in the same location.
 So in the example above, the script will create "biomarker_METADATA_v4.json" and
 put it in C:\Documents\Schemas
 
@@ -152,20 +152,22 @@ Distant Recurrence
 ```
 
 
-## Notes for Schema Creators
 Spacing indicates whether something is a section, field, or field property:
 * 0 tabs = Section
 * 1 tab =  Field
 * 2 tabs = Datatype or Dropdown List Option
+
+
+## Notes for Schema Creators
 
 The schema cannot contain:
 * Double quote characters ["]. Any found in the file will be converted to single quotes ['].
 * Non-ASCII/Extended-ASCII characters (i.e. less common special characters, characters from non-English languages). Any found will be replaced or removed.
 
 The conversion script has functionality to make schema development easier:
-1. The script will check for schema validity
-2. Capitalization for anything and asterisks for datatypes are not necessary
-3. An additional script is available to automatically [add asterisks to datatypes](Converter_Files/format_field_datatypes.py) in an otherwise completed schema, if desired.
+1. The script will check for schema validity.
+2. Capitalization for anything and asterisks for datatypes are not necessary.
+3. An additional script is available to automatically [add asterisks to datatypes](Converter_Files/format_field_datatypes.py) in an otherwise completed text file formatted schema, if desired.
 
 
 ## Notes for Metadata Managers
@@ -189,8 +191,15 @@ One way to check for carriage return characters in the file
 
 ## Summary of Conversion Steps
 
+Standard:
 1. Obtain MS Word schema
 2. Copy schema contents and paste into a new .txt file
 3. Run the converter script with this .txt file
 4. Remove carriage returns from the generated .json file
 5. Install .json file into LabKey
+
+Alternative:
+1. Obtain text file formatted schema
+2. Run the converter script with this file
+3. Remove carriage returns from the generated .json file
+4. Install .json file into LabKey
