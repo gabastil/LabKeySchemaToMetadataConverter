@@ -1,5 +1,5 @@
 # LabKeySchemaToMetadataConverter
-Converts text file annotation schemas into metadata JSON files useable by LabKey Software
+Converts annotation schema files into metadata JSON files usable by LabKey Software
 
 ## Instructions for Converting Files
 This manual assumes the user is using Windows and is familiar with navigating through directories in a command prompt.
@@ -31,7 +31,7 @@ Select "UTF-8":
 
 ![UTF-8](images/utf_8.PNG)
 
-If run into the following message, click "Cancel" and follow the directions above:
+If you run into the following message, click "Cancel" and follow the directions above:
 
 ![error message](images/error_message.PNG)
 
