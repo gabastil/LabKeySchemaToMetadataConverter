@@ -25,7 +25,7 @@ def main(in_file):
     has_bad_format = False
     out_lines = []
     for line in lines:
-        if line:
+        if line and line != "\n":
             chunks = line.split()
             if len(chunks) > 1:
 
