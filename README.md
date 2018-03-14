@@ -43,7 +43,7 @@ Use the following command:
 
 ```convert_schema_to_json.cmd SCHEMA_FILE```
 
-where SCHEMA_FILE is the name (or path from the current folder) of the schema text file you wish to convert. For example, if the schema file is named biomarker_SCHEMA_4.txt in the folder C:\Documents\Schemas, then the command would be:
+where SCHEMA_FILE is the name (or path from the current folder) of the schema text file you wish to convert. For example, if the schema file is named biomarker_SCHEMA_v4.txt in the folder C:\Documents\Schemas, then the command would be:
 
 ```convert_schema_to_json.cmd "C:\Documents\Schemas\biomarker_SCHEMA_v4.txt"```
 
