@@ -15,18 +15,72 @@ import ftfy
 from Globals import *
 
 
-class Schema(object):
-    def __init__(self):
-        pass
 
-    def parse_document(self):
-        pass
+class SchemaReader:
 
-    def parse_json(self):
-        pass
+    delimiters = {'section' : '#', 'field' : '\n', 'item' : ':'}
 
-    def __parse_schema_line(self):
-        pass
+    def __init__(self, document):
+        '''
+            Constructor for a SchemaReader
+
+            Parameters
+            ----------
+                document (str) : Schema text file (txt or docx).
+        '''
+        self.document = document
+        self.json = None
+
+
+    def parse_document(self, document=None):
+        '''
+            Open and convert a document into a JSON file.
+        '''
+        if document:
+            pass
+        else:
+            document = self.document
+
+        if document is None:
+            raise Warning("No document specified by Class or Argument.")
+
+        with open(document) as doc_in:
+            lines = doc_in.split(self.delimiters['section'])
+            self.json = self.__parse_schema_lines(lines)
+
+
+    def __parse_schema_lines(self, lines):
+        '''
+            Return a JSON formatted object with data from each line
+
+            Parameters
+            ----------
+                lines (list) : Split lines from a schema text file
+
+            Returns
+            -------
+                json (dict) : Information from the schema text file as JSON
+        '''
+        json = {}
+
+        for line in lines:
+            header, content = self.__parse_schema_line(line)
+            json[header] = content
+
+        return json
+
+
+    def __parse_schema_line(self, line):
+        '''
+            Return a tuple of values with the structure (header, content)
+
+            Parameters
+            ----------
+                line (str) : single line from a schema text file
+
+        '''
+        return None, None
+
 
     def __parse_schema_section(self):
         pass
