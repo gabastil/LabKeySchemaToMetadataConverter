@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+# filename : Globals.py
+# author : spencer morris
+# collaborator : glenn abastillas
+# modified date : 2020-03-17
+# description : Global variables used throughout this package.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 JSON_EXTENSION = ".json"
 
 SCHEMA = "SCHEMA"

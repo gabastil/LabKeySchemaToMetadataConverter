@@ -1,3 +1,12 @@
+#!/usr/bin/env python
+# filename : SchemaReader.py
+# author : spencer morris
+# collaborator : glenn abastillas
+# modified date : 2020-03-17
+# description : refactoring functions for readability and adding functionality
+#   for conditional labkey fields in the schema (e.g., listeners and handlers).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 import re
 import string
 
