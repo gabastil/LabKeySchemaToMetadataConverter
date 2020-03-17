@@ -3,14 +3,51 @@
 # author : spencer morris
 # collaborator : glenn abastillas
 # modified date : 2020-03-17
-# description : refactoring functions for readability and adding functionality
-#   for conditional labkey fields in the schema (e.g., listeners and handlers).
+# description : class definition for a JSON Schema in LabKey
+# updates:
+#   2020-03-17 - added Schema class and ftfy package import
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 import re
 import string
+import ftfy
 
 from Globals import *
+
+
+class Schema(object):
+    def __init__(self):
+        pass
+
+    def parse_document(self):
+        pass
+
+    def parse_json(self):
+        pass
+
+    def __parse_schema_line(self):
+        pass
+
+    def __parse_schema_section(self):
+        pass
+
+    def __parse_schema_field(self):
+        pass
+
+    def __parse_schema_datatype(self):
+        pass
+
+    def __parse_schema_classtype(self):
+        pass
+
+    def __check_line_characters(self, line, index):
+        pass
+
+    def __check_for_extended_ascii(self):
+        pass
+
+    def replace_extended_ascii(self):
+        pass
 
 
 def get_schema_contents(schema_lines):
